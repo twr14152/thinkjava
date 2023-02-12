@@ -1,22 +1,27 @@
 import java.util.Scanner;
 
-public class ScanBugWA {
+public class AddSum {
 
-	public static void main(String[] args) {
-	        int age;
-		String name;
+	public static int addsum(int a, int b) {
 
-		Scanner in = new Scanner(System.in);
+		int result = a + b;
 
-		System.out.print("Whats your age? ");
-		age = in.nextInt();
-		in.nextLine(); // you need this line to get the next string to print
-		System.out.print("Whats your full name? ");
-		name = in.nextLine();
-		System.out.printf("Your name is %s and you are %d years old.\n", name, age);
+		return result;
 	}
-}
 
+	 public static void main(String[] args) {
+		 
+		 int a;
+		 int b;
+		 Scanner in = new Scanner(System.in);
+		 System.out.println("Lets do some addition.");
+		 System.out.print("Enter a number: ");
+		 a = in.nextInt();
+		 System.out.print("Enter a second number: ");
+		 b = in.nextInt();
+		 System.out.printf("The answer is: %d\n", addsum(a, b));
+	 }
+}
 /*
 pi@raspberrypi:~/Code_folder/java/thinkjava/ch4 $ java AddSum 
 Lets do some addition.
